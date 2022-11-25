@@ -47,34 +47,50 @@ h3 {
 }
 
 .container {
+  .fileInput {
+    display: none;
+  }
   .upload {
+    cursor: pointer;
+    z-index: 1;
     font-size: 3em;
     font-weight: 800;
     border-radius: 5px;
     border: 0;
-    padding: 15px 30px;
+    padding: 15px 40px;
     background-color: #ebe2e2;
     color: white;
-    .btnTitle {
-      text-transform: uppercase;
-      color: transparent;
-      background: #141e30; /* fallback for old browsers */
-      background-image: -webkit-linear-gradient(
-        90deg,
-        #243b55,
-        #141e30
-      ); /* Chrome 10-25, Safari 5.1-6 */
-      background-image: linear-gradient(
-        90deg,
-        #243b55,
-        #141e30
-      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      background-clip: text;
-      -webkit-background-clip: text;
-      background-size: 300%;
-      transition: background-position 1s;
-      &:hover {
-        background-position: right;
+    .uploadContent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      .uploadIcon {
+        color: #243b55;
+      }
+      .btnTitle {
+        text-transform: uppercase;
+        color: transparent;
+        background: #141e30; /* fallback for old browsers */
+        background-image: -webkit-linear-gradient(
+          90deg,
+          #243b55,
+          #37506d,
+          #141e30
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background-image: linear-gradient(
+          90deg,
+          #243b55,
+          #37506d,
+          #141e30
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-size: 300%;
+        transition: background-position 2s;
+        &:hover {
+          background-position: right;
+        }
       }
     }
   }
